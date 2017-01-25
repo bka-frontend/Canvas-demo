@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas Demo</title>
+	<script type="text/javascript" src="fabric.js"></script>
+</head>
+<body style="background-color: black;">
+	<canvas id="canvas"></canvas>
+
+	<script type="text/javascript">
+		var canvas = this.__canvas = new fabric.Canvas('canvas');
+		canvas.backgroundColor = "white";
+		canvas.setWidth(1000);
+		canvas.setHeight(1000);
+		var rect1 = new fabric.Rect({
+		    width: 200, height: 100, left: 100, top: 100,
+		    fill: 'rgba(255,0,0,0.5)'
+		});
+
+		var circle1 = new fabric.Circle({
+		    width: 200, height: 100, left: 100, top: 100,
+		    fill: 'rgba(255,0,0,0.5)'
+		});
+		canvas.add(rect1).add(circle1).renderAll()
+
+	</script>
+
+</body>
+</html>
