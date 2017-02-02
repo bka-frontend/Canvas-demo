@@ -1,2 +1,3 @@
 # Canvas-demo
-Basic canvas tool demo - 27/01/2017 by Leo
+Basic canvas tool demo - 03/02/2017 by Leo
+link: http://fabricjs.com/image-filters
