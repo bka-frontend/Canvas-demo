@@ -8,18 +8,13 @@
 </head>
 <body style="background-color: black;">
 	<canvas id="canvas"></canvas>
-    <button onclick="moveLeft()">move left</button>
-     <button onclick="moveDown()">move down</button>
-
+	<button onclick="moveLeft()">move left</button>
+	<button onclick="moveDown()">move down</button>
 	<script type="text/javascript">
 		var canvas = new fabric.Canvas('canvas');
 		canvas.backgroundColor = "white";
-        
-        
-        
 		canvas.setWidth(1000);
 		canvas.setHeight(1000);
-        
 		var rect1 = new fabric.Rect({
 		    width: 200, height: 100, left: 100, top: 100,
 		    fill: 'rgba(255,0,0,0.5)'
@@ -29,21 +24,15 @@
 		    radius: 100, left: 500, top: 200,
 		    fill: 'green'
 		});
-        
 		canvas.add(rect1).add(circle1).renderAll()
-        console.log(canvas.getObjects("rect"));
-        
-        
-        function moveLeft(){
-            canvas.getObjects("rect")[0].left = 700;
-            canvas.renderAll();
-        
-        }
-        function moveDown(){
-            canvas.getObjects("rect")[0].top = 800 ;
-             canvas.renderAll();
-        
-        }
+		function moveLeft(){
+			canvas.getObjects("rect")[0].left = 700;
+			canvas.renderAll();
+		}
+		function moveDown(){
+			canvas.getObjects("rect")[0].top = 800 ;
+			canvas.renderAll();
+		}
 	</script>
 
 </body>
